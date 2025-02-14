@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+        "esModuleInterop": true,
+    "moduleResolution": "node16",
+    "target": "ES6",
+    "module": "Node16",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
