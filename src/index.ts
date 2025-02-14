@@ -31,7 +31,7 @@ interface MCCRule {
 }
 
 // Endpoint: Check if MCC is allowed
-app.get('/check-mcc', async (req: Request, res: Response) => {
+app.get('/check-mcc', async (req: any, res: any) => {
     try {
         const { mcc } = req.query;
         if (!mcc) {
