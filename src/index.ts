@@ -39,7 +39,7 @@ app.get('/check-mcc', async (req: any, res: any) => {
         }
 
         // Fetch MCC policy from Firestore
-        const doc = await db.collection('mcc_rules').doc(mcc as string).get();
+        const doc = await db.collection('mccRules').doc(mcc as string).get();
         if (!doc.exists) {
             return res.status(404).json({ error: 'MCC code not found' });
         }
